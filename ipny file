@@ -1,0 +1,35 @@
+def check_plagiarism(filename_1, filename_2):
+doc_1 = open(filename_1, 'r')
+doc_2 = open(filename_2, 'r')
+for line in doc_1:
+words_1 = line.split(' ')
+for line in doc_2:
+words_2 = line.split(' ')
+doc_1.close()
+doc_2.close()
+plagia = []
+tups = []
+same = False
+for i in range(len(words_1)-5):
+for j in range(len(words_2)-5):
+if words_1[i:i+5] == words_2[j:j+5]:
+same = (i, j)
+#print(same)
+tups.append(same)
+if same == False:
+return same
+
+for tup in tups:
+i = tup[0]
+j = tup[1]
+temp = []
+while words_1[i] == words_2[j]:
+temp.append(words_1[i])
+i += 1
+j += 1
+if len(temp) > len(plagia):
+plagia = temp  
+return (' ').join(plagia)
+print(check_plagiarism("file_1.txt", "file_2.txt"))
+print(check_plagiarism("file_1.txt", "file_3.txt"))
+print(check_plagiarism("file_2.txt", "file_3.txt"))
