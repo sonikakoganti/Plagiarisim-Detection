@@ -1,0 +1,2 @@
+# Plagiarisim-Detection
+Plagiarism is a serious issue that needs to be controlled and monitored. It refers to the act of blindly copying someone else’s work and presenting it as your unique work. It is to steal and pass off  as one's own. To use  without crediting the source. To commit literary theft. To present as new and original an idea or product derived from an existing source. Plagiarism is done by paraphrasing sentences, using similar keywords, changing the form of sentences, and so on. In this sense, plagiarism is like theft of intellectual property. 
